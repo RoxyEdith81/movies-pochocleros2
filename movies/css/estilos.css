@@ -1,0 +1,417 @@
+     
+         
+        
+
+        body{
+            background-color: rgb(221, 222, 221);
+        }
+
+
+        .tenD{
+            color:(251,87,5);
+            font-size: 30px;
+            text-align: center;
+            background-color: grey;
+
+        }
+
+        .verH{
+            color: hs(251,87,5);
+            font-size: 30px;
+            text-align: left;
+            background-color: grey;
+        }
+
+
+        .aclaM{
+            color: (251,87,5);
+            font-size: 30px;
+            text-align: center;
+            background-color: grey;
+        }
+
+        .reG{
+            color: (251,87,5);
+            font-size: 30px;
+            text-align: center;
+            background-color: grey;
+        }
+
+        .reG{
+            color: beige;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+  
+
+
+        .container-imagenes{
+            padding: 20px 0;
+            background-color: rgb(10, 10, 10);
+            border: 10px;             
+            justify-content: space-evenly; /* Centra las películas horizontalmente */
+            box-sizing: border-box;
+            border-radius: 20px;       
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); /*Tres columnas con igual ancho  */
+             grid-gap: 15px;/* Espacio entre las películas */
+             margin: auto;
+            
+        }
+
+        .pelicula {
+            margin: auto; /* Centra las películas verticalmente */ 
+            border: solid ; 
+            border-radius: 20px;
+            
+            
+        }
+
+        .pelicula img{
+            border-radius: 20px; /* Aplica border-radius a las imágenes */
+            
+        }
+
+        .pelicula:hover img {
+            transform: scale(1.1); /* Escala la imagen al 110% en hover */
+        }
+
+        
+        .Anterior{
+            color: rgb(255,255,255); 
+            font-size: 20px;
+            margin: 0.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;   
+        }
+
+
+        .Siguiente{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            margin: 0.5rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+            
+        }
+
+        .mas-aclamadas{
+            padding: 20px 0;
+            background-color: rgb(7, 7, 7);
+            border: 10px;
+            justify-content: space-between;
+            box-sizing: border-box;
+            border-radius: 20px;
+            display:flex;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 15px;
+            margin: auto;
+        
+        }
+
+        .imagen-aclamadas{
+            margin: auto;
+            border: solid;
+            border-radius: 20px;
+            display: flex;
+            margin: auto;
+        }
+
+
+
+        .imagen-aclamadas img{
+            border-radius: 10px;
+ 
+        }
+
+        .imagen-aclamadas :hover img{
+            transform: scale(1.1);
+
+        }
+        
+
+
+
+
+
+
+        .principal{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            background-image: url(../assets/img/imagen\ fondo\ pantalla\ full.webp);
+            background-size: cover;   
+            background-repeat: no-repeat;
+            background-position: center; 
+            width: 100%;  
+            height: 50vh;    
+        }
+
+        .titulo{
+            max-width: 35rem;
+            color: rgb(254, 254, 254);
+            font-size: 55px;
+            text-align: center;
+        }
+
+     
+
+            
+        /*Eliminar las bolitas de las listas desordenadas*/
+        ul{
+            display: flex;            
+            list-style: none;
+
+        }
+
+        /*Eliminar viñetas*/
+        li a {
+            text-decoration: none;
+            margin: 0.5rem;
+            color: rgb(156, 5, 5);
+            display: flex;
+            justify-content: center;
+            border: solid 1px;
+            border-radius: 5px;
+            margin: 4px;
+            padding: 12px;
+
+        }
+
+        li a:hover{
+            background-color: white;
+            color:brown;
+        }
+
+        a:hover,button:hover, li a:hover{
+            background-color: white;
+            color:brown; 
+        }
+
+        nav{
+            /* mueve los registrarse, inicio, etc de arriba */
+            display: flex; /*Es una propiedad que habilita la configuracion para alinear el contenido*/
+            justify-content: space-between;
+            background-color: rgb(114, 4, 4);
+        
+        }
+        
+     
+        /*Estilos de iniciar sesion*/
+        .email-sesion, 
+        .password-sesion,
+        .nombre,
+        .apellido,
+        .email,
+        .password,
+        .label,
+        .pais,
+        .fecha
+        {
+            margin-bottom: 1rem;
+                
+        
+        }
+        
+
+        .email-sesion input, 
+        .password-sesion input,
+        .nombre input,
+        .apellido input,
+        .email input,
+        .password input,
+        .fecha input
+        {
+
+            border-radius: 20px;
+            padding: 0.3rem ;
+            border-color: red;
+            background-color: black;
+            color: white;
+            background-size: contain;
+            
+        
+          
+        }
+
+
+        .fecha input{
+            padding: 0.3rem 2.2rem;
+            
+        }
+        /* .labelterminoCondiciones{
+            margin-bottom: 10px; */
+
+        
+
+        
+        .pais select{ 
+
+            border-radius: 20px;
+            padding: 0.3rem 3rem;
+            border: 1px solid;
+            border-color: red;
+            background-color: black;
+            color: white;
+            margin-bottom: 1rem;
+
+        }
+        select{
+            border-color: red;
+        }
+        .enviar-sesion input{
+            background-color: maroon;
+            color: white;
+            margin: 5px;
+            padding: 10px 2.5rem;
+        }
+
+        .iniciar-sesion, .registrarse {
+            text-align: center;
+        }
+        .login-form-sesion, .login-form-registrarse{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+        }
+        .fecha{
+            border-radius: 20px;
+            border-radius: 20px;
+            padding: 6px;
+            color: rgb(10, 10, 10);
+            background-color: 221 beige;   
+        
+        }
+        .registrarse input{ 
+           
+            padding: 0.5rem 3.5rem;
+            background-color: rgb(169, 37, 37);
+            color: white;        
+       
+        }
+
+
+        .terminoCondiciones {
+            /* color: rgb(194, 11, 11); */
+            font-size: 1rem;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 0.2rem;
+            border-color: red;
+            background-color: rgb(221, 222, 221);
+            color: rgb(7, 7, 7);
+            background-size: contain;
+            margin-bottom: 1rem;
+            
+        }
+
+        .ayuda{
+        
+            margin-top: 0.5rem;
+        }
+
+        li a{
+            color: white;
+        }
+
+        .registro-inicio{
+            text-decoration: none;
+            margin-top: 0.5rem;
+
+        }
+
+
+       /* Estilo para la tarjeta de película */
+        .card-Pelicula {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            flex: 0 0 calc(50% - 20px); /* Las tarjetas ocuparán el 50% del ancho con un margen de 20px */
+            max-width: calc(50% - 20px); /* Limitar el ancho máximo de las tarjetas */
+            box-sizing: border-box; /* Incluir el borde en el ancho total */
+        }
+
+        /* Estilo para el contenedor del cuerpo de la tarjeta */
+        .card-Cont {
+            padding: 5px;
+        }
+
+        /* Estilo para el título de la película */
+        .card-Title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Estilo para la imagen de la tarjeta */
+        .stylecardImg {
+            width: 40%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+            .pelicula {
+                flex-basis: 50%; /* En pantallas más pequeñas, muestra 2 columnas */
+                flex: 0 1 calc(50% - 20px); /* Se resta el margen para evitar que las imágenes se desborden */
+                margin: 10px;
+                max-width: calc(50% - 20px);
+            }
+        }
+
+       
+     
+
+        @media screen and (max-width: 400px)
+        
+        
+        {
+
+            nav{
+                display: flex;
+                justify-content: center;
+                background-color: aquamarine;
+            }
+
+
+            .container-imagenes, .mas-aclamadas{
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+
+            .pelicula {
+                flex-basis: 100%; /* En pantallas muy pequeñas, muestra solo una columna */
+                flex: 0 1 250px;
+                margin: 10px;
+                max-width: 100%;
+            }
+        
+            .pelicula img {
+                width: 100%;
+                height: auto;
+            }
+          
+        }
+
+
+     
+
+      
+        
